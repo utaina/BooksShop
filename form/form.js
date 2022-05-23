@@ -41,8 +41,8 @@ inputs.forEach(input =>  {
 })
 
 const form = document.querySelector('.card');
+const confirm = document.querySelector('.confirm');
 form.addEventListener('change', () => { 
-const confirm = document.querySelector('.confirm')
 let valid = inputs.every(input => input.checkValidity());
 if (valid) {
     confirm.removeAttribute('disabled');
@@ -68,6 +68,16 @@ check.forEach((element) => {
 })
 })
 
+
+confirm.addEventListener('click', () => {
+    let sum = document.createElement('div');
+    sum.className = 'sumBox';
+    sum.innerHTML = "The order created. The delivery address is " + inputs[3].value +  
+    " street house " + inputs[4].value + " flat " + inputs[5].value + ". Customer " + inputs[0].value + " " + 
+    inputs[1].value + ".";
+    document.body.firstElementChild.style.visibility = "hidden";
+    document.body.append(sum);
+})
 
 
 

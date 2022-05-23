@@ -1,3 +1,4 @@
+
 .card {
     background: whitesmoke;
     border: 2px solid darkgray;
@@ -15,7 +16,11 @@
 }
 
 .form-field label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
+}
+.bold {
+    font-size: 18px;
 }
 
 .form-field input {
@@ -36,4 +41,17 @@ input.invalid {
 .form-field > input:disabled {
     cursor: not-allowed;
   }
+
+.sumBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    max-width: 80%;
+    font-size: 16px;
+}
 

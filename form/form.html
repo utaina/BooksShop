@@ -10,31 +10,31 @@
 <body>
     <form class="card" onsubmit="return false">
         <div class="form-field">
-            <label for="name">Name</label>
+            <label class="bold" for="name">Name</label>
             <input type="text" name="name" id="name" required minlength="4" pattern="[a-zA-Z]+">
         </div>
         <div class="form-field">
-            <label for="surname">Surname</label>
+            <label class="bold" for="surname">Surname</label>
             <input type="text" name="surname" id="surname" required minlength="5" pattern="[a-zA-Z]+">
         </div>
         <div class="form-field">
-            <label for="date">Delivery date</label>
+            <label class="bold" for="date">Delivery date</label>
             <input type="date" name="date" id="date" required>
         </div>
         <div class="form-field">
-            <label for="street">Street</label>
+            <label class="bold" for="street">Street</label>
             <input type="text" name="street" id="street" required minlength="5" pattern="[a-zA-Z0-9]+">
         </div>
         <div class="form-field">
-            <label for="house-number">House number</label>
+            <label class="bold" for="house-number">House number</label>
             <input type="text" name="house-number" id="house-number" required pattern="[0-9]+">
         </div>
         <div class="form-field">
-            <label for="flat-number">Flat number</label>
+            <label class="bold" for="flat-number">Flat number</label>
             <input type="text" name="flat-number" id="flat-number" required pattern="^[1-9]\d*(?: ?(?:[1-9]|[-]?\d+[1-9]?))?$">
         </div>
         <div class="form-field">
-            <p>Choose the payment type</p>
+            <p class="bold">Choose the payment type</p>
             <div>
                 <input type="radio" name="payment" value="cash" id="cash" checked>
                 <label for="cash">Cash</label>
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="form-field gifts">
-            <p>Choose 2 gifts</p>
+            <p class="bold">Choose 2 gifts</p>
             <div>
                 <input type="checkbox" name="gift" value="pack" id="pack" >
                 <label for="pack">pack as a gift</label>
