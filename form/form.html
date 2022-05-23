@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form class="card" onsubmit="return false">
+        <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required minlength="4" pattern="[a-zA-Z]+">
+        </div>
+        <div class="form-field">
+            <label for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" required minlength="5" pattern="[a-zA-Z]+">
+        </div>
+        <div class="form-field">
+            <label for="date">Delivery date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div class="form-field">
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street" required minlength="5" pattern="[a-zA-Z0-9]+">
+        </div>
+        <div class="form-field">
+            <label for="house-number">House number</label>
+            <input type="text" name="house-number" id="house-number" required pattern="[0-9]+">
+        </div>
+        <div class="form-field">
+            <label for="flat-number">Flat number</label>
+            <input type="text" name="flat-number" id="flat-number" required pattern="^[1-9]\d*(?: ?(?:[1-9]|[-]?\d+[1-9]?))?$">
+        </div>
+        <div class="form-field">
+            <p>Choose the payment type</p>
+            <div>
+                <input type="radio" name="payment" value="cash" id="cash" checked>
+                <label for="cash">Cash</label>
+            </div>
+            <div>
+                <input type="radio" name="payment" value="card" id="card">
+                <label for="card">Card</label>
+            </div>
+        </div>
+        <div class="form-field gifts">
+            <p>Choose 2 gifts</p>
+            <div>
+                <input type="checkbox" name="gift" value="pack" id="pack" >
+                <label for="pack">pack as a gift</label>
+            </div>
+            <div>
+                <input type="checkbox" name="gift" value="postcard" id="postcard" >
+                <label for="postcard">add postcard</label>
+            </div>
+            <div>
+                <input type="checkbox" name="gift" value="discount" id="discount" >
+                <label for="discount">provide 2% discount to the next time</label>
+            </div>
+            <div>
+                <input type="checkbox" name="gift" value="pen" id="pen" >
+                <label for="pen">branded pen or pencil</label>
+            </div>
+        </div>
+        <div class="form-field">
+            <input class="confirm" disabled type="submit" value="complete">
+        </div>
+    </form> 
+    <script type="text/javascript" src="./form.js"></script> 
+</body>
+</html>

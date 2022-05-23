@@ -1,0 +1,39 @@
+.card {
+    background: whitesmoke;
+    border: 2px solid darkgray;
+    border-radius: 6px;
+    padding: 10px;
+    max-width: 50%;
+    margin: auto;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    font-size: 16px;
+}
+
+.form-field input {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid darkgrey;
+}
+input.invalid {
+    border: 1px solid red;
+  }
+.form-field.invalid::before{
+    content: "The field is invalid";
+    color: red;
+    position: absolute;
+    align-self: flex-start;
+}
+.form-field > input:disabled {
+    cursor: not-allowed;
+  }
+
